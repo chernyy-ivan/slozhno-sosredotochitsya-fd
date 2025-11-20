@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-/* ИСПРАВЛЕНО: сброс отступов у html и body */
-html {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -15,8 +15,6 @@ html {
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0;
-  padding: 0;
 }
 
 h1,

@@ -28,22 +28,6 @@
   display: none;
 }
 
-.theme-light .header__theme-menu-button {
-  color: #353430;
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border-color: rgba(53, 52, 48, 0.4);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom-color: #353430;
-}
-
-.theme-light .header__theme-menu-button_active {
-  border-color: #353430;
-}
-
 /* Стили для системной светлой темы */
 @media (prefers-color-scheme: light) {
   :root {
