@@ -7,9 +7,8 @@
   /* Фоновые изображения */
   --cover-image: url("../images/cover-image-dark.png");
   
-  /* Основные цвета тёмной темы */
+  /* Основные цвета тёмной темы (по умолчанию) */
   --page-background-color: #000028;
-  --header-background-color: #000028;
   --main-background-color: #000028;
   --text-color: #F1B2CE;
   --title-color: #DB00FF;

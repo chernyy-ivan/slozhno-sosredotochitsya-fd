@@ -20,4 +20,27 @@
   --title-decor-background: #FF0070;
   --link-color: #F1B2CE;
   --link-shadow: #FF0070;
+  --text-shadow: 4px 4px 0 #FF0070;
+  --link-shadow-value: 2px 2px 0 #FF0070;
+}
+
+/* Дополнительные стили для тёмной темы */
+.theme-dark .header__rec {
+  display: block;
+}
+
+.theme-dark .header__theme-menu-button {
+  color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  border-color: rgba(255, 0, 112, 0.4);
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  border-bottom-color: #FF0070;
+}
+
+.theme-dark .header__theme-menu-button_active {
+  border-color: #FF0070;
 }
