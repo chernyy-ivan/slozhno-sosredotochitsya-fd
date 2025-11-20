@@ -13,12 +13,12 @@
   --cover-image: url("../images/cover-image-dark.png");
   --page-background-color: #000028;
   --main-background-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #FFF1F7;  /* ИСПРАВЛЕНО: был #F1B2CE */
   --title-color: #DB00FF;
   --accent-color: #FF0070;
   --title-decor-color: #000028;
   --title-decor-background: #FF0070;
-  --link-color: #F1B2CE;
+  --link-color: #FFF1F7;  /* ИСПРАВЛЕНО: был #F1B2CE */
   --link-shadow: #FF0070;
   --text-shadow: 4px 4px 0 #FF0070;
   --link-shadow-value: 2px 2px 0 #FF0070;
@@ -42,5 +42,26 @@
 }
 
 .theme-dark .header__theme-menu-button_active {
+  border-color: #FF0070;
+  color: #FF0070;
+}
+
+/* Убедимся, что все элементы используют правильные цвета */
+.theme-dark .section__title {
+  color: #FF0070;
+}
+
+.theme-dark .title-decor {
+  color: #000028;
+  background-color: #FF0070;
+}
+
+.theme-dark .link {
+  color: #FFF1F7;  /* ИСПРАВЛЕНО: был #F1B2CE */
+  text-shadow: 2px 2px 0 #FF0070;
+}
+
+.theme-dark .decorated-zone::before,
+.theme-dark .decorated-zone::after {
   border-color: #FF0070;
 }

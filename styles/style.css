@@ -5,7 +5,7 @@
   font-family: var(--main-font);
   font-size: var(--font-size-base);
   line-height: 1.3;
-  background-attachment: fixed; /* ИСПРАВЛЕНО: добавлено свойство */
+  background-attachment: fixed;
 }
 
 /* Шапка с фоновым изображением - занимает всю высоту экрана */
@@ -14,13 +14,15 @@
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   height: 100vh;
-  min-height: 668px;
+  min-height: 100vh;
+  max-height: 100vh;
   padding: 20px;
   background-image: var(--cover-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  overflow: hidden;
 }
 
 /* Основной контент с сплошным фоном */
@@ -32,15 +34,17 @@
   background-color: var(--main-background-color);
 }
 
-/* Футер с сплошным фоном - занимает всю высоту экрана */
+/* Футер с сплошным фоном - ИСПРАВЛЕНО: гарантированно вся высота экрана */
 .footer {
   display: grid;
   place-items: center;
-  height: 100vh;
-  min-height: 668px;
+  height: 100vh; /* Вся высота viewport */
+  min-height: 100vh; /* Минимум вся высота viewport */
+  max-height: 100vh; /* Максимум вся высота viewport */
   padding: 20px;
   position: relative;
   background-color: var(--main-background-color);
+  overflow: hidden; /* Убираем возможные скроллы */
 }
 
 /* Декоративные уголки */
@@ -300,12 +304,6 @@
   display: block;
 }
 
-/* Мобильная версия (по умолчанию) */
-.gallery {
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-}
-
 .footer__title {
   color: var(--title-color);
   font-family: var(--main-font);
@@ -390,7 +388,6 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
-
 
 /* Адаптив для десктопа (1024px+) */
 @media (width >= 1024px) {
