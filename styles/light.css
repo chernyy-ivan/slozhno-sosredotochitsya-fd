@@ -4,8 +4,8 @@
   переключая тему
 */
 
-/* УДАЛИ ЭТОТ БЛОК - он дублируется с медиазапросом ниже */
-/* :root.theme-light {
+/* ДЛЯ ПРИНУДИТЕЛЬНОЙ СВЕТЛОЙ ТЕМЫ (класс) */
+:root.theme-light {
   --cover-image: url("../images/cover-image-light.png");
   --page-background-color: #FFF1F7;
   --main-background-color: #FFF1F7;
@@ -22,9 +22,9 @@
 
 .theme-light .header__rec {
   display: none;
-} */
+}
 
-/* Стили для системной светлой темы */
+/* ДЛЯ СИСТЕМНОЙ СВЕТЛОЙ ТЕМЫ (медиазапрос) */
 @media (prefers-color-scheme: light) {
   :root {
     --cover-image: url("../images/cover-image-light.png");
@@ -44,24 +44,4 @@
   .header__rec {
     display: none;
   }
-}
-
-/* ДОБАВЬ этот блок для принудительной светлой темы */
-:root.theme-light {
-  --cover-image: url("../images/cover-image-light.png");
-  --page-background-color: #FFF1F7;
-  --main-background-color: #FFF1F7;
-  --text-color: #353430;
-  --title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --title-decor-color: #353430;
-  --title-decor-background: #FF8DCB;
-  --link-color: #353430;
-  --link-shadow: #FF8DCB;
-  --text-shadow: 4px 4px 0 #FF8DCB;
-  --link-shadow-value: 2px 2px 0 #FF8DCB;
-}
-
-.theme-light .header__rec {
-  display: none;
 }
