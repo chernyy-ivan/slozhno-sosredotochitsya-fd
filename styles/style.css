@@ -77,7 +77,7 @@
 .header__rec {
   position: absolute;
   top: 10px;
-  right: 28px;
+  right: 8px;
   color: var(--accent-color);
   font-family: var(--main-font);
   font-size: 18px;
@@ -88,8 +88,8 @@
 .header__rec::after {
   content: '';
   position: absolute;
-  top: 8px;
-  right: -20px;
+  top: 9px;
+  right: -12px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -164,7 +164,7 @@
   grid-row: 2;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: -20px;
 }
 
@@ -227,7 +227,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 12px;
 }
 
 .card__content p {
@@ -325,7 +324,7 @@
   font-weight: var(--font-weight-bold);
   line-height: 0.825;
   text-shadow: var(--text-shadow);
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 /* Адаптив для планшета (768px+) - вертикальная ориентация 768x1024 */
@@ -357,7 +356,7 @@
   
   .header__rec {
     top: 20px;
-    right: 48px;
+    right: 38px;
   }
   
   .header__theme-menu {
@@ -365,13 +364,13 @@
   }
   
   .header__title {
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   
   .footer__title {
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   
@@ -457,12 +456,12 @@
   }
   
   .header__title {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-left: -20px;
   }
   
   .footer__title {
-    margin-top: 70px;
+    margin-top: 25px;
   }
   
   .distractions .card-grid {
