@@ -125,18 +125,21 @@
   transition: border-color 0.3s ease;
 }
 
+/* Ховер - все стороны с прозрачностью */
 .header__theme-menu-button:hover {
-  border-color: var(--accent-color, 0.4);
+  border-color: color-mix(in srgb, var(--accent-color) 40%, transparent);
 }
 
+/* Фокус - только нижняя граница */
 .header__theme-menu-button:focus {
   outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end-color: var(--accent-color);
+  border-color: transparent transparent var(--accent-color) transparent;
 }
 
+/* Активная кнопка - все стороны без прозрачности */
 .header__theme-menu-button_active {
   border-color: var(--accent-color);
   pointer-events: none;
@@ -383,7 +386,7 @@
   }
   
   .header__text {
-    max-inline-size: 364px; /* ИСПРАВЛЕНО: было 491px */
+    max-inline-size: 364px;
   }
   
   .footer__title {
@@ -421,6 +424,6 @@
   }
   
   .header__text {
-    max-inline-size: 491px; /* Для десктопа оставляем 491px */
+    max-inline-size: 491px;
   }
 }
