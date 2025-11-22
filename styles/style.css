@@ -221,7 +221,7 @@
 
 .card__title_thin {
   font-weight: var(--font-weight-base);
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Для мобилки маленький отступ */
 }
 
 .card__content {
@@ -390,12 +390,16 @@
   
   .card-grid {
     grid-column: 1 / -1;
-    grid-template-columns: 1fr; /* ИЗМЕНЕНИЕ: на планшете одна колонка */
+    grid-template-columns: 1fr;
   }
   
   .concentration .card-grid {
     grid-column: 2;
     grid-template-columns: 1fr;
+  }
+  
+  .card__title_thin {
+    margin-bottom: 20px; /* Для планшета увеличиваем отступ */
   }
   
   /* Стили для галереи на планшете */
@@ -466,12 +470,16 @@
   }
   
   .distractions .card-grid {
-    grid-template-columns: repeat(3, 1fr); /* На десктопе остаются 3 колонки */
+    grid-template-columns: repeat(3, 1fr);
   }
   
   .concentration .card-grid {
     grid-column: 2;
     grid-template-columns: 1fr;
+  }
+  
+  .card__title_thin {
+    margin-bottom: 20px; /* Для десктопа тоже 20px */
   }
   
   /* Галерея на десктопе */
