@@ -209,7 +209,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .card__title {
