@@ -24,6 +24,28 @@
   display: none;
 }
 
+/* Цвет кнопок в светлой теме */
+.theme-light .header__theme-menu-button {
+  color: #353430;
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border-color: color-mix(in srgb, #353430 40%, transparent);
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  border-bottom-color: #353430;
+}
+
+.theme-light .header__theme-menu-button_active {
+  border-color: #353430;
+}
+
+/* Цвет заголовков секций в светлой теме */
+.theme-light .section__title {
+  color: #353430;
+}
+
 /* ДЛЯ АВТО-РЕЖИМА С КЛАССОМ theme-auto */
 :root.theme-auto {
   /* Для авто-режима оставляем системные настройки */
@@ -52,6 +74,28 @@
   
   .header__rec {
     display: none;
+  }
+
+  /* Цвет кнопок в системной светлой теме */
+  .header__theme-menu-button {
+    color: #353430;
+  }
+
+  .header__theme-menu-button:hover {
+    border-color: color-mix(in srgb, #353430 40%, transparent);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom-color: #353430;
+  }
+
+  .header__theme-menu-button_active {
+    border-color: #353430;
+  }
+
+  /* Цвет заголовков секций в системной светлой теме */
+  .section__title {
+    color: #353430;
   }
 
   /* Для авто-режима в светлой системе */

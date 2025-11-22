@@ -6,8 +6,8 @@
   font-size: var(--font-size-base);
   line-height: 1.3;
   background-attachment: fixed;
-   margin: 0 auto;
-   width: 100%;
+  margin: 0 auto;
+  width: 100%;
   max-width: none;
 }
 
@@ -16,16 +16,14 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  height: 100vh;
-  min-height: 668px;
-  padding: 20px;
+  block-size: 100vh;
+  min-block-size: 668px;
+  padding: 10px;
   background-image: var(--cover-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  width: 100%;
-  max-width: none;
 }
 
 /* Основной контент с сплошным фоном */
@@ -33,7 +31,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
-  padding: 40px 20px;
+  padding: 40px 10px;
   background-color: var(--main-background-color);
 }
 
@@ -41,9 +39,9 @@
 .footer {
   display: grid;
   place-items: center;
-  height: 100vh;
-  min-height: 668px;
-  padding: 20px;
+  block-size: 100vh;
+  min-block-size: 668px;
+  padding: 10px;
   position: relative;
   background-color: var(--main-background-color);
 }
@@ -57,20 +55,20 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .decorated-zone::before {
-  top: 20px;
-  right: 20px;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
   border-inline-end: 1px solid var(--accent-color);
   border-block-start: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
-  bottom: 20px;
-  left: 20px;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
 }
@@ -78,8 +76,8 @@
 /* Декоративная надпись REC */
 .header__rec {
   position: absolute;
-  top: 20px;
-  right: 48px;
+  inset-block-start: 10px;
+  inset-inline-end: 38px;
   color: var(--accent-color);
   font-family: var(--main-font);
   font-size: 18px;
@@ -90,10 +88,10 @@
 .header__rec::after {
   content: '';
   position: absolute;
-  top: 8px;
-  right: -28px;
-  width: 9px;
-  height: 9px;
+  inset-block-start: 8px;
+  inset-inline-end: -28px;
+  inline-size: 9px;
+  block-size: 9px;
   border-radius: 50%;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
@@ -103,7 +101,7 @@
 .header__theme-menu {
   justify-self: end;
   align-self: start;
-  margin-top: 40px;
+  margin-block-start: 65px;
 }
 
 .header__theme-menu-list {
@@ -136,7 +134,10 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-color: transparent transparent var(--accent-color) transparent;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start-color: transparent;
+  border-inline-end-color: transparent;
+  border-block-start-color: transparent;
 }
 
 /* Активная кнопка - все стороны без прозрачности */
@@ -164,7 +165,7 @@
 .header__text {
   justify-self: end;
   align-self: center;
-  max-inline-size: 364px;
+  max-inline-size: 355px;
   font-family: var(--main-font);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
@@ -303,8 +304,8 @@
 }
 
 .gallery__image {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   display: block;
 }
@@ -318,11 +319,40 @@
   text-shadow: var(--text-shadow);
 }
 
-/* Адаптив для планшета (768px+) */
+/* Адаптив для планшета (768px+) - вертикальная ориентация 768x1024 */
 @media (width >= 768px) {
+  .header {
+    padding: 20px;
+    min-block-size: 1024px;
+  }
+  
   .main {
     gap: 80px;
     padding: 60px 20px;
+  }
+  
+  .footer {
+    padding: 20px;
+    min-block-size: 1024px;
+  }
+  
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+  
+  .decorated-zone::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+  
+  .header__rec {
+    inset-block-start: 20px;
+    inset-inline-end: 48px;
+  }
+  
+  .header__theme-menu {
+    margin-block-start: 170px;
   }
   
   .section {
@@ -394,11 +424,20 @@
   }
 }
 
-/* Адаптив для десктопа (1024px+) */
+/* Адаптив для десктопа (1024px+) - горизонтальная ориентация 1024x768 */
 @media (width >= 1024px) {
+  .header {
+    min-block-size: 768px;
+  }
+  
+  .footer {
+    min-block-size: 768px;
+  }
+  
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    margin-block-start: 0;
   }
   
   .header__theme-menu-list {
