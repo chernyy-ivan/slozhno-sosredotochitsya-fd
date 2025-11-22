@@ -165,7 +165,7 @@
   margin: 0;
   padding: 0;
   margin-top: 20px;
-  margin-left: 10px; /* Для мобилки отступ от левого края */
+  margin-left: 10px; 
 }
 
 /* Текст в шапке */
@@ -221,7 +221,7 @@
 
 .card__title_thin {
   font-weight: var(--font-weight-base);
-  margin-bottom: 10px; /* Для мобилки маленький отступ */
+  margin-bottom: 10px; 
 }
 
 .card__content {
@@ -299,7 +299,7 @@
 .gallery-section {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Для мобилки маленький отступ */
+  gap: 10px; 
 }
 
 .gallery {
@@ -399,11 +399,11 @@
   }
   
   .card__title_thin {
-    margin-bottom: 20px; /* Для планшета увеличиваем отступ */
+    margin-bottom: 20px; 
   }
   
   .gallery-section {
-    gap: 20px; /* Для планшета нормальный отступ */
+    gap: 20px; 
   }
   
   /* Стили для галереи на планшете */
@@ -466,7 +466,7 @@
   
   .header__title {
     margin-top: 30px;
-    margin-left: -20px; /* Для десктопа прижато к краю */
+    margin-left: -20px; 
   }
   
   .footer__title {
@@ -483,11 +483,11 @@
   }
   
   .card__title_thin {
-    margin-bottom: 20px; /* Для десктопа тоже 20px */
+    margin-bottom: 20px; 
   }
   
   .gallery-section {
-    gap: 20px; /* Для десктопа нормальный отступ */
+    gap: 20px; 
   }
   
   /* Галерея на десктопе */
