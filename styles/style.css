@@ -221,7 +221,7 @@
 
 .card__title_thin {
   font-weight: var(--font-weight-base);
-  margin-bottom: 10px; /* Для мобилки маленький отступ */
+  margin-bottom: 5px; /* Для мобилки маленький отступ */
 }
 
 .card__content {
