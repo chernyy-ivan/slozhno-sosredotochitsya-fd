@@ -46,10 +46,6 @@
   color: #353430;
 }
 
-/* ДЛЯ АВТО-РЕЖИМА С КЛАССОМ theme-auto */
-:root.theme-auto {
-  /* Для авто-режима оставляем системные настройки */
-}
 
 .theme-auto .header__rec {
   display: block;
