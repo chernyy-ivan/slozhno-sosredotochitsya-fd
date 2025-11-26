@@ -8,7 +8,7 @@
   background-attachment: fixed;
   margin: 0 auto;
   width: 100%;
-  max-width: none;
+  max-width: 100%;
 }
 
 /* Шапка с фоновым изображением - занимает всю высоту экрана */
@@ -164,7 +164,6 @@
   margin: 0;
   padding: 0;
   margin-top: 20px;
-  margin-left: 10px;
 }
 
 /* Текст в шапке */
@@ -366,7 +365,6 @@
   
   .header__title {
     margin-top: 40px;
-    margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   
@@ -466,7 +464,6 @@
   
   .header__title {
     margin-top: 30px;
-    margin-left: -20px;
   }
   
   .footer__title {
