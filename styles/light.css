@@ -29,21 +29,13 @@
   color: #353430;
 }
 
-.theme-light .header__theme-menu-button:hover {
-  border-color: color-mix(in srgb, #353430 40%, transparent);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom-color: #353430;
+/* Специфические цвета для светлой темы */
+.theme-light .section__title {
+  color: #353430; /* ✅ Исправлен цвет заголовков */
 }
 
 .theme-light .header__theme-menu-button_active {
-  border-color: #353430;
-}
-
-/* Цвет заголовков секций в светлой теме */
-.theme-light .section__title {
-  color: #353430;
+  border-color: #353430; /* ✅ Исправлен цвет обводки активной кнопки */
 }
 
 /* ДЛЯ СИСТЕМНОЙ СВЕТЛОЙ ТЕМЫ (медиазапрос) */
@@ -72,21 +64,12 @@
     color: #353430;
   }
 
-  .theme-auto .header__theme-menu-button:hover {
-    border-color: color-mix(in srgb, #353430 40%, transparent);
-  }
-
-  .theme-auto .header__theme-menu-button:focus-visible {
-    border-bottom-color: #353430;
+  /* Специфические цвета для авто-светлой темы */
+  .theme-auto .section__title {
+    color: #353430; /* ✅ Исправлен цвет заголовков */
   }
 
   .theme-auto .header__theme-menu-button_active {
-    border-color: #353430;
-  }
-
-  /* Цвет заголовков секций в системной светлой теме */
-  .theme-auto .section__title {
-    color: #353430;
+    border-color: #353430; /* ✅ Исправлен цвет обводки активной кнопки */
   }
 }
-
