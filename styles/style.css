@@ -9,6 +9,11 @@
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
+  /* ✅ ВЕРНУТЬ фон на всю страницу */
+  background-image: var(--cover-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -19,10 +24,11 @@
   height: 100vh;
   padding: 10px;
   position: relative;
-  background-image: var(--cover-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  /* ❌ УБРАТЬ фон из шапки */
+  /* background-image: var(--cover-image); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
 }
 
 .main {
@@ -30,7 +36,8 @@
   flex-direction: column;
   gap: var(--section-gap);
   padding: 40px 10px;
-  background-color: var(--main-background-color);
+  /* ✅ Сделать прозрачным чтобы был виден общий фон */
+  background-color: transparent;
 }
 
 .footer {
@@ -40,7 +47,8 @@
   height: 100vh;
   padding: 10px;
   position: relative;
-  background-color: var(--main-background-color);
+  /* ✅ Сделать прозрачным чтобы был виден общий фон */
+  background-color: transparent;
 }
 
 .decorated-zone {
@@ -72,7 +80,7 @@
 .header__rec {
   position: absolute;
   top: 10px;
-  right: 8px;
+  right: 18px;
   color: var(--accent-color);
   font-family: var(--main-font);
   font-size: 18px;
@@ -84,7 +92,7 @@
   content: '';
   position: absolute;
   top: 9px;
-  right: -12px;
+  right: -18px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -274,6 +282,8 @@
 .gallery {
   display: grid;
   gap: 10px;
+  grid-template-columns: 1fr; /* ✅ Одна колонка на мобильных */
+  width: 100%;
 }
 
 .gallery__item {
@@ -326,7 +336,7 @@
   
   .header__rec {
     top: 20px;
-    right: 38px;
+    right: 48px;
   }
   
   .header__theme-menu {
@@ -376,7 +386,7 @@
   
   .gallery {
     grid-column: 1 / -1;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* ✅ 3 колонки на планшете+ */
     grid-template-rows: repeat(3, minmax(100px, auto));
     gap: 20px;
   }
