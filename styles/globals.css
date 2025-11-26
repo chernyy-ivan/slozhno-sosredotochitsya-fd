@@ -15,8 +15,10 @@ body {
 
 body {
   min-inline-size: 375px;
+  max-inline-size: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1,
