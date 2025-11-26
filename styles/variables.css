@@ -1,39 +1,39 @@
-/* 
-  Переменные для вашего проекта 
-  и их переопределение под различные устройства 
-*/ 
- 
-:root { 
-  /* Фоновые изображения */ 
-  --cover-image: url("../images/cover-image-dark.png"); 
-   
-  /* Основные цвета тёмной темы (по умолчанию) */ 
-  --page-background-color: #000028; 
-  --main-background-color: #000028; 
-  --text-color: #F1B2CE; 
-  --title-color: #DB00FF; 
-  --accent-color: #FF0070; 
-   
-  /* Цвета для декоративных элементов */ 
-  --title-decor-color: #000028; 
-  --title-decor-background: #FF0070; 
-   
-  /* Цвета ссылок */ 
-  --link-color: #F1B2CE; 
-  --link-shadow: #FF0070; 
-   
-  /* Отступы */ 
-  --section-gap: 50px; 
-  --card-gap: 20px; 
-   
-  /* Шрифты */ 
-  --main-font: 'IBM Plex mono', monospace; 
-  --font-size-base: 18px; 
-  --font-size-title: 18px; 
-  --font-weight-base: 400; 
-  --font-weight-bold: 700; 
-   
-  /* Тени - КОНКРЕТНЫЕ ЦВЕТА */ 
-  --text-shadow: 4px 4px 0 #FF0070; 
-  --link-shadow-value: 2px 2px 0 #FF0070; 
-} 
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
+:root {
+  /* Фоновые изображения */
+  --cover-image: url("../images/cover-image-dark.png");
+  
+  /* Основные цвета тёмной темы (по умолчанию) */
+  --page-background-color: #000028;
+  --main-background-color: #000028;
+  --text-color: #F1B2CE;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  
+  /* Цвета для декоративных элементов */
+  --title-decor-color: #000028;
+  --title-decor-background: #FF0070;
+  
+  /* Цвета ссылок */
+  --link-color: #F1B2CE;
+  --link-shadow: #FF0070;
+  
+  /* Отступы */
+  --section-gap: 50px;
+  --card-gap: 20px;
+  
+  /* Шрифты */
+  --main-font: 'IBM Plex mono', monospace;
+  --font-size-base: 18px;
+  --font-size-title: 18px;
+  --font-weight-base: 400;
+  --font-weight-bold: 700;
+  
+  /* Тени - КОНКРЕТНЫЕ ЦВЕТА */
+  --text-shadow: 4px 4px 0 #FF0070;
+  --link-shadow-value: 2px 2px 0 #FF0070;
+}
