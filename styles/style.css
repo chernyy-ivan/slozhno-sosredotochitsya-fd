@@ -1,11 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-/* Глобальное ограничение для предотвращения горизонтального скролла */
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
 .page {
   background-color: var(--page-background-color);
   font-family: var(--main-font);
@@ -15,14 +9,9 @@ html, body {
   margin: 0 auto;
   width: 100%;
   max-width: none;
-  /* ФОН ДЛЯ ВСЕЙ СТРАНИЦЫ */
-  background-image: var(--cover-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
-/* Шапка - занимает всю высоту экрана */
+/* Шапка с фоновым изображением - занимает всю высоту экрана */
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -30,18 +19,23 @@ html, body {
   min-height: 668px;
   height: 100vh;
   padding: 10px;
+  background-image: var(--cover-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
-/* Основной контент */
+/* Основной контент с сплошным фоном */
 .main {
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
   padding: 40px 10px;
+  background-color: var(--main-background-color);
 }
 
-/* Футер - занимает всю высоту экрана */
+/* Футер с сплошным фоном - занимает всю высоту экрана */
 .footer {
   display: grid;
   place-items: center;
@@ -49,6 +43,7 @@ html, body {
   height: 100vh;
   padding: 10px;
   position: relative;
+  background-color: var(--main-background-color);
 }
 
 /* Декоративные уголки */
@@ -170,8 +165,7 @@ html, body {
   margin: 0;
   padding: 0;
   margin-top: 20px;
-  max-width: 100%;
-  word-wrap: break-word;
+  margin-left: 10px;
 }
 
 /* Текст в шапке */
@@ -195,7 +189,6 @@ html, body {
 .section {
   display: grid;
   gap: 20px;
-  max-width: 100%;
 }
 
 .section__title {
@@ -280,7 +273,6 @@ html, body {
 .card-grid {
   display: grid;
   gap: var(--card-gap);
-  max-width: 100%;
 }
 
 /* Ссылки */
@@ -313,7 +305,6 @@ html, body {
 .gallery {
   display: grid;
   gap: 10px;
-  max-width: 100%;
 }
 
 .gallery__item {
@@ -325,7 +316,6 @@ html, body {
   height: 100%;
   object-fit: cover;
   display: block;
-  max-width: 100%;
 }
 
 .footer__title {
@@ -336,9 +326,6 @@ html, body {
   line-height: 0.825;
   text-shadow: var(--text-shadow);
   margin-top: 20px;
-  max-width: 100%;
-  text-align: center;
-  word-wrap: break-word;
 }
 
 /* Адаптив для планшета (768px+) - вертикальная ориентация 768x1024 */
@@ -514,27 +501,5 @@ html, body {
   
   .header__text {
     max-width: 491px;
-  }
-}
-
-/* Улучшаем адаптивность для мобильных */
-@media (max-width: 375px) {
-  .header, .main, .footer {
-    padding: 5px;
-  }
-  
-  .header__title,
-  .footer__title {
-    font-size: clamp(6rem, 10vw, 7rem);
-    margin-top: 10px;
-  }
-  
-  .header__text {
-    max-width: 100%;
-    padding: 0 5px;
-  }
-  
-  .header__theme-menu {
-    margin-top: 40px;
   }
 }
