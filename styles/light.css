@@ -6,7 +6,7 @@
 
 /* ДЛЯ ПРИНУДИТЕЛЬНОЙ СВЕТЛОЙ ТЕМЫ (класс) */
 :root.theme-light {
-  --cover-image: url("./images/cover-image-light.png");
+  --cover-image: url("../images/cover-image-light.png");
   --page-background-color: #FFF1F7;
   --main-background-color: #FFF1F7;
   --text-color: #353430;
@@ -46,6 +46,7 @@
   color: #353430;
 }
 
+
 .theme-auto .header__rec {
   display: block;
 }
@@ -53,7 +54,7 @@
 /* ДЛЯ СИСТЕМНОЙ СВЕТЛОЙ ТЕМЫ (медиазапрос) */
 @media (prefers-color-scheme: light) {
   :root {
-    --cover-image: url("./images/cover-image-light.png");
+    --cover-image: url("../images/cover-image-light.png");
     --page-background-color: #FFF1F7;
     --main-background-color: #FFF1F7;
     --text-color: #353430;

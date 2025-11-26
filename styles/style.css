@@ -220,7 +220,7 @@
 }
 
 .card__title_thin {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-base);
   margin-bottom: 10px;
 }
 
