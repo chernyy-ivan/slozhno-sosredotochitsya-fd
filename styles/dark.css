@@ -22,3 +22,10 @@
 .theme-dark .header__rec {
   display: block;
 }
+
+/* Для авто-режима в тёмной системе */
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto .header__rec {
+    display: block;
+  }
+}
