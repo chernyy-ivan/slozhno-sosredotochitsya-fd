@@ -9,6 +9,11 @@
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
+  /* ✅ Фон для всей страницы */
+  background-image: var(--cover-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Шапка с фоновым изображением - занимает всю высоту экрана */
@@ -19,23 +24,19 @@
   min-height: 668px;
   height: 100vh;
   padding: 10px;
-  background-image: var(--cover-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
 }
 
-/* Основной контент с сплошным фоном */
+/* Основной контент с прозрачным фоном */
 .main {
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
   padding: 40px 10px;
-  background-color: var(--main-background-color);
+  background-color: transparent;
 }
 
-/* Футер с сплошным фоном - занимает всю высоту экрана */
+/* Футер с прозрачным фоном - занимает всю высоту экрана */
 .footer {
   display: grid;
   place-items: center;
@@ -43,7 +44,7 @@
   height: 100vh;
   padding: 10px;
   position: relative;
-  background-color: var(--main-background-color);
+  background-color: transparent;
 }
 
 /* Декоративные уголки */
