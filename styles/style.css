@@ -273,8 +273,8 @@
 .gallery-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  
+  gap: 20px;
+
 }
 
 .gallery {
@@ -295,6 +295,7 @@
   display: block;
   max-width: 100%;
 }
+
 
 /* Адаптив для планшета и выше (768px+) */
 @media (min-width: 768px) {
@@ -325,7 +326,7 @@
   }
   
   .header__theme-menu {
-    margin-top: 160px;
+    margin-top: 150px;
   }
   
   .header__title,
