@@ -194,10 +194,14 @@
 .card .title {
   margin-bottom: 0;
 }
+  
+  .card .title_large-margin {
+  margin-bottom: -10px; 
+  }
 
 .section {
   display: grid;
-  gap: 19px;
+  gap: 20px;
 }
 
 .section__title {
@@ -209,6 +213,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .card__content {
@@ -243,7 +248,7 @@
 .card-grid {
   display: grid;
   gap: var(--card-gap);
-  grid-column: 1 / -1; 
+  grid-column: 1 / -1; /* ← ПЕРЕНЕС из медиазапроса сюда */
 }
 
 .link {
