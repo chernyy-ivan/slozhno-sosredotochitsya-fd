@@ -93,7 +93,7 @@
 .header__theme-menu {
   justify-self: end;
   align-self: start;
-  margin-top: 65px;
+  margin-top: 55px;
 }
 
 .header__theme-menu-list {
@@ -274,6 +274,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
 }
 
 .gallery {
@@ -324,7 +325,7 @@
   }
   
   .header__theme-menu {
-    margin-top: 170px;
+    margin-top: 160px;
   }
   
   .header__title,
