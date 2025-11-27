@@ -464,10 +464,10 @@
   }
 
   .reasons .card {
-  margin-left: -5px; /* ✅ Только карточки в секции reasons */
-}
+    margin-left: -5px; 
+  }
 
-.concentration .card {
-  margin-left: -5px; /* ✅ 5 простых советов */
-}
-}
+  .concentration .card {
+    margin-left: -5px; 
+  }
+} 
