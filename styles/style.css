@@ -390,7 +390,7 @@
   }
 
   .gallery-section {
-    margin-top: -43px; /* ← ДОБАВЛЯЕМ СЮДА */
+    margin-top: -35px; 
     gap: 25px;
   }
 }
