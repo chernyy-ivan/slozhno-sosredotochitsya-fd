@@ -31,23 +31,23 @@
 
 /* Ховер кнопок в светлой теме */
 .theme-light .header__theme-menu-button:hover {
-  border-color: color-mix(in srgb, #353430 40%, transparent); 
+  border-color: color-mix(in srgb, #353430 40%, transparent);
 }
 
 /* Фокус кнопок в светлой теме */
 .theme-light .header__theme-menu-button:focus-visible {
-  border-bottom-color: #353430; /* ✅ Фокус с #353430 */
+  border-bottom-color: #353430;
 }
 
 /* Активная кнопка в светлой теме */
 .theme-light .header__theme-menu-button_active {
-  border-color: #353430; /* ✅ Активная кнопка с #353430 */
+  border-color: #353430;
 }
 
 /* Цвет рамок (декоративных уголков) в светлой теме */
 .theme-light .decorated-zone::before,
 .theme-light .decorated-zone::after {
-  border-color: #353430; /* ✅ Цвет рамок */
+  border-color: #353430;
 }
 
 /* Цвет заголовков секций в светлой теме */
@@ -71,7 +71,7 @@
     --text-shadow: 4px 4px 0 #FF8DCB;
     --link-shadow-value: 2px 2px 0 #FF8DCB;
   }
-  
+
   .theme-auto .header__rec {
     display: none;
   }
@@ -83,23 +83,23 @@
 
   /* Ховер кнопок в системной светлой теме */
   .theme-auto .header__theme-menu-button:hover {
-    border-color: color-mix(in srgb, #353430 40%, transparent); /* ✅ Ховер с #353430 */
+    border-color: color-mix(in srgb, #353430 40%, transparent);
   }
 
   /* Фокус кнопок в системной светлой теме */
   .theme-auto .header__theme-menu-button:focus-visible {
-    border-bottom-color: #353430; /* ✅ Фокус с #353430 */
+    border-bottom-color: #353430;
   }
 
   /* Активная кнопка в системной светлой теме */
   .theme-auto .header__theme-menu-button_active {
-    border-color: #353430; /* ✅ Активная кнопка с #353430 */
+    border-color: #353430;
   }
 
   /* Цвет рамок (декоративных уголков) в системной светлой теме */
   .theme-auto .decorated-zone::before,
   .theme-auto .decorated-zone::after {
-    border-color: #353430; /* ✅ Цвет рамок */
+    border-color: #353430;
   }
 
   /* Цвет заголовков секций в системной светлой теме */
