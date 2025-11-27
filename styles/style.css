@@ -390,8 +390,8 @@
   }
 
   .gallery-section {
-    margin-top: -35px; 
-    gap: 25px;
+    margin-top: -37px; 
+    gap: 20px;
   }
 }
 
@@ -427,7 +427,7 @@
   }
   
   .gallery-section {
-    gap: 25px; /* ← УВЕЛИЧИВАЕМ для десктопа */
+    gap: 20px; /* ← УВЕЛИЧИВАЕМ для десктопа */
   }
 
 }
