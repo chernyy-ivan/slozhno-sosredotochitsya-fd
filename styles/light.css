@@ -1,17 +1,16 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
+/* 
+  Специально для светлой темы при наличии класса. 
+  Здесь окажутся стили, которые нужно переопределить принудительно, 
+  переключая тему 
 */
 
-/* ДЛЯ ПРИНУДИТЕЛЬНОЙ СВЕТЛОЙ ТЕМЫ (класс) */
 :root.theme-light {
   --cover-image: url("../images/cover-image-light.png");
   --page-background-color: #FFF1F7;
   --main-background-color: #FFF1F7;
   --text-color: #353430;
   --title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --accent-color: #353430;
   --title-decor-color: #353430;
   --title-decor-background: #FF8DCB;
   --link-color: #353430;
@@ -24,46 +23,15 @@
   display: none;
 }
 
-/* Цвет кнопок в светлой теме */
-.theme-light .header__theme-menu-button {
-  color: #353430;
-}
-
-/* Ховер кнопок в светлой теме */
-.theme-light .header__theme-menu-button:hover {
-  border-color: color-mix(in srgb, #353430 40%, transparent);
-}
-
-/* Фокус кнопок в светлой теме */
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom-color: #353430;
-}
-
-/* Активная кнопка в светлой теме */
-.theme-light .header__theme-menu-button_active {
-  border-color: #353430;
-}
-
-/* Цвет рамок (декоративных уголков) в светлой теме */
-.theme-light .decorated-zone::before,
-.theme-light .decorated-zone::after {
-  border-color: #353430;
-}
-
-/* Цвет заголовков секций в светлой теме */
-.theme-light .section__title {
-  color: #353430;
-}
-
-/* ДЛЯ СИСТЕМНОЙ СВЕТЛОЙ ТЕМЫ (медиазапрос) */
+/* ДЛЯ СИСТЕМНОЙ СВЕТЛОЙ ТЕМЫ */
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --cover-image: url("../images/cover-image-light.png");
     --page-background-color: #FFF1F7;
     --main-background-color: #FFF1F7;
     --text-color: #353430;
     --title-color: #FFC2E6;
-    --accent-color: #FF8DCB;
+    --accent-color: #353430;
     --title-decor-color: #353430;
     --title-decor-background: #FF8DCB;
     --link-color: #353430;
@@ -72,38 +40,7 @@
     --link-shadow-value: 2px 2px 0 #FF8DCB;
   }
 
-  .theme-auto .header__rec {
+  .header__rec {
     display: none;
-  }
-
-  /* Цвет кнопок в системной светлой теме */
-  .theme-auto .header__theme-menu-button {
-    color: #353430;
-  }
-
-  /* Ховер кнопок в системной светлой теме */
-  .theme-auto .header__theme-menu-button:hover {
-    border-color: color-mix(in srgb, #353430 40%, transparent);
-  }
-
-  /* Фокус кнопок в системной светлой теме */
-  .theme-auto .header__theme-menu-button:focus-visible {
-    border-bottom-color: #353430;
-  }
-
-  /* Активная кнопка в системной светлой теме */
-  .theme-auto .header__theme-menu-button_active {
-    border-color: #353430;
-  }
-
-  /* Цвет рамок (декоративных уголков) в системной светлой теме */
-  .theme-auto .decorated-zone::before,
-  .theme-auto .decorated-zone::after {
-    border-color: #353430;
-  }
-
-  /* Цвет заголовков секций в системной светлой теме */
-  .theme-auto .section__title {
-    color: #353430;
   }
 }

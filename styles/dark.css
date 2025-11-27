@@ -22,23 +22,3 @@
 .theme-dark .header__rec {
   display: block;
 }
-
-/* Для авто-режима в тёмной системе */
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-    --cover-image: url("../images/cover-image-dark.png");
-    --page-background-color: #000028;
-    --main-background-color: #000028;
-    --text-color: #F1B2CE;
-    --title-color: #DB00FF;
-    --accent-color: #FF0070;
-    --title-decor-color: #000028;
-    --title-decor-background: #FF0070;
-    --link-color: #F1B2CE;
-    --link-shadow: #FF0070;
-    --text-shadow: 4px 4px 0 #FF0070;
-    --link-shadow-value: 2px 2px 0 #FF0070;
-  }
-  
-  
-}
