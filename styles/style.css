@@ -428,7 +428,7 @@
   
   .gallery-section {
     gap: 20px; /* ← УВЕЛИЧИВАЕМ для десктопа */
-    margin-top: -30px;
+    margin-top: -20px;
   }
 
 }
