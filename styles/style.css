@@ -326,7 +326,7 @@
   }
   
   .header__theme-menu {
-    margin-top: 135px;
+    margin-top: 145px;
   }
   
   .header__title,
@@ -405,8 +405,8 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-    margin-top: -15px;
-    margin-right: 20px;
+    margin-top: -10px;
+    margin-right: 15px;
   }
   
   .header__theme-menu-list {
