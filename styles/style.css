@@ -274,7 +274,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: -15px;
+  margin-top: -17px;
 }
 
 .gallery {
@@ -387,6 +387,11 @@
   
   .header__text {
     max-width: 364px;
+  }
+
+  .gallery-section {
+    margin-top: -43px; /* ← ДОБАВЛЯЕМ СЮДА */
+    gap: 25px;
   }
 }
 
