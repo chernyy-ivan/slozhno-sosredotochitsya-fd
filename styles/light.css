@@ -31,7 +31,7 @@
 
 /* Ховер кнопок в светлой теме */
 .theme-light .header__theme-menu-button:hover {
-  border-color: color-mix(in srgb, #353430 40%, transparent); /* ✅ Ховер с #353430 */
+  border-color: color-mix(in srgb, #353430 40%, transparent); 
 }
 
 /* Фокус кнопок в светлой теме */
